@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Odin Library</title>
+  </head>
+  <body>
+    <h1 id="title">Odin Library</h1>
+
+    <dialog id="add-modal">
+      <form id="add-form">
+        <input type="text" name="name" placeholder="Book Name" />
+        <input type="text" name="author" placeholder="Author Name" />
+        <textarea name="description" cols="30" rows="10">
+Describe the book
+</textarea
+        >
+        <div>
+          <label for="have-read">Have Read</label>
+          <input type="checkbox" name="haveRead" id="have-read" />
+        </div>
+        <button onclick="this.form.to = 'add';">Add</button>
+        <button onclick="this.form.to = 'cancel';">Cancel</button>
+      </form>
+    </dialog>
+
+    <button id="add-button">Add a Book</button>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
