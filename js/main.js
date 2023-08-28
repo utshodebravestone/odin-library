@@ -66,7 +66,7 @@ function createBookDOM(book) {
   li.appendChild(description);
 
   const haveRead = document.createElement("button");
-  haveRead.textContent = book.haveRead ? "Have Read" : "Not Read";
+  haveRead.textContent = book.haveRead ? "Have Read" : "Yet to Read";
   haveRead.dataset.bookId = book.id;
   haveRead.classList.add("have-read-button");
   li.appendChild(haveRead);

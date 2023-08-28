@@ -7,26 +7,25 @@
     <title>Odin Library</title>
   </head>
   <body>
-    <h1 id="title">Odin Library</h1>
-
-    <dialog id="add-modal">
-      <form id="add-form">
-        <input type="text" name="name" placeholder="Book Name" />
-        <input type="text" name="author" placeholder="Author Name" />
-        <textarea name="description" cols="30" rows="10">
-Describe the book
-</textarea
-        >
-        <div>
-          <label for="have-read">Have Read</label>
-          <input type="checkbox" name="haveRead" id="have-read" />
-        </div>
-        <button onclick="this.form.to = 'add';">Add</button>
-        <button onclick="this.form.to = 'cancel';">Cancel</button>
-      </form>
-    </dialog>
-
-    <button id="add-button">Add a Book</button>
+    <div class="main">
+      <h1 id="title">Odin Library</h1>
+      <button id="add-button">Add a Book</button>
+      <dialog id="add-modal">
+        <form id="add-form">
+          <input type="text" name="name" placeholder="Book Name" />
+          <input type="text" name="author" placeholder="Author Name" />
+          <textarea name="description" cols="30" rows="10">
+Describe the book</textarea
+          >
+          <div>
+            <input type="checkbox" name="haveRead" id="have-read" />
+            <label for="have-read">Have Read</label>
+          </div>
+          <button onclick="this.form.to = 'add';">Add</button>
+          <button onclick="this.form.to = 'cancel';">Cancel</button>
+        </form>
+      </dialog>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>
