@@ -117,28 +117,35 @@ textarea {
 }
 
 .books li {
-  width: 50vw;
+  width: min(50vw, 650px);
   background-color: rgb(255, 215, 125);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
   border-left: 0.5rem solid rgb(245, 185, 55);
   border-radius: 0.5rem;
 }
 
+.divider {
+  padding: 0.5rem 0;
+}
+
 .books li > h1 {
   font-size: 2.5rem;
+  color: rgb(25, 25, 25);
 }
 
 .books li > h2 {
   font-size: 1.25rem;
+  color: rgb(45, 45, 45);
 }
 
 .books li > p {
   font-size: 0.9rem;
+  color: rgb(35, 35, 35);
 }
 
 .books li > button {

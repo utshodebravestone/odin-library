@@ -65,6 +65,10 @@ function createBookDOM(book) {
   description.textContent = book.description;
   li.appendChild(description);
 
+  const divider = document.createElement("div");
+  divider.classList.add("divider");
+  li.appendChild(divider);
+
   const haveRead = document.createElement("button");
   haveRead.textContent = book.haveRead ? "Have Read" : "Yet to Read";
   haveRead.dataset.bookId = book.id;
